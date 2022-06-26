@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-
 import logo from '../assets/images/logo.svg'
 import arrow from '../assets/images/icon-arrow-down.svg'
 import down from '../assets/images/icon-arrow-up.svg'
@@ -8,50 +7,18 @@ import todo from '../assets/images/icon-todo.svg'
 import calender from '../assets/images/icon-calendar.svg'
 import reminders from '../assets/images/icon-reminders.svg'
 import planning from '../assets/images/icon-planning.svg'
-import databiz from '../assets/images/client-databiz.svg'
-import audiophile from '../assets/images/client-audiophile.svg'
-import meet from '../assets/images/client-meet.svg'
-import maker from '../assets/images/client-maker.svg'
-import right from '../assets/images/image-hero-desktop.png'
+
 import close from '../assets/images/icon-close-menu.svg'
 import open from '../assets/images/icon-menu.svg'
-import mobile from '../assets/images/image-hero-mobile.png'
 
    
 
 
-export default function Introduction() {
+export default function Header() {
     const [ show1, setShow1 ] = useState(false)
     const [ show2, setShow2 ] = useState(false)
     const [ menu,setMenu ] = useState(false)
 
-    const companies = [
-        {
-            id:1,
-            image:databiz,
-        },
-        {
-            id:2,
-            image:audiophile,
-        },
-        {
-            id:3,
-            image:meet,
-        },
-        {
-            id:4,
-            image:maker,
-        }
-    ]
-    const renderCompanies = () => {
-        return (
-            companies.map((company)=>(
-                <Li key={company.id}>
-                    <LiImg src={company.image} alt="image" />
-                </Li>
-            ))
-        )
-    }
     
   return (
     <>
@@ -116,7 +83,7 @@ export default function Introduction() {
                 </HeaderRight>
             </HeaderSection>
             
-            <SpotlightWrapper>
+            {/* <SpotlightWrapper>
                 <SpotlightSection>
                     <Left>
                         <Heading1>Make</Heading1>
@@ -139,7 +106,7 @@ export default function Introduction() {
                         <RightImg src={mobile}/>
                     </Right1>
                 </SpotlightSection>
-            </SpotlightWrapper>
+            </SpotlightWrapper> */}
 
 
             <Menu className={ menu && "show" }>

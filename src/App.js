@@ -1,11 +1,11 @@
 import './App.css'
-import Introduction from './components/screens/Introduction';
+import Header from './components/screens/Header';
+import Introduction from './components/screens/Spotlight';
 
 function App() {
   return (
     <>
-      {/* <Header />
-      <Spotlight /> */}
+      <Header />
       <Introduction />
     </>
   );
